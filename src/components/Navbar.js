@@ -1,12 +1,14 @@
 import {useState} from 'react'
+import {useNavigate} from 'react-router-dom'
 import {FaUserCircle, FaCaretDown} from 'react-icons/fa'
 import Wrapper from '../styles/Navbar'
 
 const Navbar = () => {
+  const navigate = useNavigate()
   const [showLogout, setShowLogout] = useState(false)
 
   const logoutUser = () => {
-    console.log('logout')
+    navigate('/')
   }
   return (
     <Wrapper>
