@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 
 const Wrapper = styled.main`
   padding: 1em;
+  padding-top: 6em;
   display: flex;
   flex-direction: column;
   row-gap: 1em;
@@ -20,6 +21,19 @@ const Wrapper = styled.main`
   }
   div p {
     margin: 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 100%;
+      justify-content: space-between;
+    }
+    img {
+      width: 70px;
+    }
+    .container div {
+      padding-top: 0px;
+    }
   }
 `
 

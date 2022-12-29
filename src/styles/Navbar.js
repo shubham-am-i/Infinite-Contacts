@@ -1,21 +1,23 @@
 import styled from '@emotion/styled'
 
 const Wrapper = styled.nav`
+  position: fixed;
   height: 70px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
-  .logo {
-    display: flex;
-    align-items: center;
-    width: 100px;
-  }
+  background-color: var(--grey-50);
+
   .nav-center {
     display: flex;
     width: 90vw;
     align-items: center;
     justify-content: space-between;
+  }
+  .nav-center p {
+    font-size: 30px;
   }
   .toggle-btn {
     background: transparent;
@@ -31,8 +33,8 @@ const Wrapper = styled.nav`
   }
   .btn {
     font-size: large;
-    color: var(--primary-500);
-    background-color: var(--primary-100);
+    color: var(--grey-500);
+    background-color: var(--grey-100);
     border: none;
     border-radius: var(--borderRadius);
     height: 2rem;
@@ -47,12 +49,13 @@ const Wrapper = styled.nav`
     position: absolute;
     top: 40px;
     left: 0;
-    background: var(--primary-100);
+    background: var(--grey-100);
     box-shadow: var(--shadow-2);
     padding: 0.5rem;
     text-align: center;
     visibility: hidden;
     border-radius: var(--borderRadius);
+    width: 100%;
   }
   .show-dropdown {
     visibility: visible;
@@ -61,7 +64,7 @@ const Wrapper = styled.nav`
     font-size: medium;
     background: transparent;
     border-color: transparent;
-    color: var(--primary-500);
+    color: var(--grey-500);
     letter-spacing: var(--letterSpacing);
     text-transform: capitalize;
     cursor: pointer;
@@ -71,17 +74,8 @@ const Wrapper = styled.nav`
     margin: 0;
   }
   @media (min-width: 992px) {
-    position: sticky;
-    top: 0;
-
     .nav-center {
       width: 90%;
-    }
-    .logo {
-      display: none;
-    }
-    .logo-text {
-      display: block;
     }
   }
 `

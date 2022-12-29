@@ -23,12 +23,14 @@ const Landing = () => {
       <div className='container page'>
         <div className='info'>
           <h1>
-            scroll your <span>past</span>
+            scroll your <span>past...</span>
           </h1>
           <form onSubmit={handleLogin}>
-            <input name='name'></input>
+            <input name='name' placeholder='Username'></input>
+            <br></br>
 
-            <input name='password' type='password'></input>
+            <input name='password' type='password' placeholder='Password'></input>
+            <br></br>
 
             <button type='submit' className='btn btn-hero'>
               Login

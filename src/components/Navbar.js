@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <Wrapper>
       <div className='nav-center'>
-        <div>Contacts</div>
+        <p>Contacts</p>
         <div className='btn-container'>
           <button type='button' className='btn' onClick={() => setShowLogout(!showLogout)}>
             <FaUserCircle />

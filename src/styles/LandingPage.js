@@ -1,14 +1,6 @@
 import styled from '@emotion/styled'
 
 const Wrapper = styled.main`
-  nav {
-    width: var(--fluid-width);
-    max-width: var(--max-width);
-    margin: 0 auto;
-    height: var(--nav-height);
-    display: flex;
-    align-items: center;
-  }
   .page {
     min-height: calc(100vh - var(--nav-height));
     display: grid;
@@ -21,9 +13,13 @@ const Wrapper = styled.main`
       color: var(--primary-500);
     }
   }
-  p {
-    color: var(--grey-600);
+  input {
+    padding: 1em;
+    border-style: none;
+    margin-bottom: 0.6em;
+    border-radius: var(--borderRadius);
   }
+
   .main-img {
     display: none;
   }
