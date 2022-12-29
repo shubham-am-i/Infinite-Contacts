@@ -5,7 +5,7 @@ const Wrapper = styled.main`
   padding-top: 6em;
   display: flex;
   flex-direction: column;
-  row-gap: 1em;
+  row-gap: 1.5em;
   .container {
     display: flex;
     justify-content: space-around;
@@ -21,6 +21,10 @@ const Wrapper = styled.main`
   }
   div p {
     margin: 0;
+    color: var(--grey-600);
+  }
+  span {
+    font-size: 20px;
   }
 
   @media screen and (max-width: 480px) {

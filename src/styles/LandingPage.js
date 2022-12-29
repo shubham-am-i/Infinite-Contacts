@@ -6,6 +6,7 @@ const Wrapper = styled.main`
     display: grid;
     align-items: center;
     margin-top: -3rem;
+    justify-content: center;
   }
   h1 {
     font-weight: 700;

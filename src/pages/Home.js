@@ -13,7 +13,6 @@ const Home = () => {
       const {
         data: {results},
       } = await axios(`https://randomuser.me/api/?page=${page}&results=10&inc=name,picture,phone`)
-      console.log(results)
 
       setContacts((prev) => [...prev, ...results])
       setLoading(false)
