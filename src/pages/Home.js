@@ -12,7 +12,7 @@ const Home = () => {
       setLoading(true)
       const {
         data: {results},
-      } = await axios(`https://randomuser.me/api/?page=${page}&results=7&inc=name,picture,phone`)
+      } = await axios(`https://randomuser.me/api/?page=${page}&results=10&inc=name,picture,phone`)
       console.log(results)
 
       setContacts((prev) => [...prev, ...results])
