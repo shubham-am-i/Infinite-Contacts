@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 const Wrapper = styled.nav`
-  height: var(--nav-height);
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,6 @@ const Wrapper = styled.nav`
     display: flex;
     align-items: center;
   }
-  background: var(--white);
   .btn-container {
     position: relative;
   }
