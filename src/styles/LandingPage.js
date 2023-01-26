@@ -34,7 +34,7 @@ const Wrapper = styled.main`
         width: 40%;
         overflow: hidden;
     }
-    @media (max-width: 480px) {
+    @media (min-width: 320px) and (max-width: 480px) {
         .page {
             flex-direction: column-reverse;
             gap: 0;
@@ -44,6 +44,8 @@ const Wrapper = styled.main`
             width: 100%;
         }
         .info {
+            width: 100%;
+            padding: 0 1rem;
             z-index: 4;
         }
     }
