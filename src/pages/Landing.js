@@ -5,7 +5,6 @@ import {useNavigate} from 'react-router-dom'
 import lottie from 'lottie-web'
 
 // Local imports
-import main from '../assets/images/main.svg'
 import Wrapper from '../styles/LandingPage'
 import {useEffect} from 'react'
 
