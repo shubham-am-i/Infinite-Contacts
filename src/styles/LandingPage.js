@@ -12,6 +12,22 @@ const Wrapper = styled.main`
         color: white;
         background-color: black;
     }
+    .info {
+        animation: moveInLeft 1s ease-in;
+    }
+    @keyframes moveInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-150px);
+        }
+        80% {
+            transform: translate(15px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
     h1 {
         font-weight: 700;
         span {
