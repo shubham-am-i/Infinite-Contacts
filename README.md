@@ -2,7 +2,14 @@
 
 #### React Contact List to demonstrate infinite scrolling feature
 
-Project in Action - [Infinite Scroll](https://infinite-contacts.netlify.app/)
+Project in Action - [React Contacts](https://infinite-contacts.netlify.app/)
+
+
+## Features
+- use React skeleton library instead of loader
+- calls api when user reaches at the end of the page.
+- nice animation on landing page.
+- protected home page using react state
 
 ## Usage
 
@@ -27,6 +34,6 @@ npm start
 npm run build
 
 ```
-![2022-12-29 (7)](https://user-images.githubusercontent.com/88419331/209951249-9b94bb1c-8350-4e65-8450-22667e417975.png)
 
+![Screenshot_20230126_030439](https://user-images.githubusercontent.com/88419331/214803083-09d415c8-e6a6-42bf-a262-d01088fed782.png)
 
